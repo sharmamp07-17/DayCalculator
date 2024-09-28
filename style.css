@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6677f8;
+}
+
+.container {
+  margin: 100px auto;
+  width: 80%;
+  padding: 5% 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.text-field {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.box span {
+  color: crimson;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 1.3rem;
+  text-align: left;
+  align-items: flex-start;
+  border-radius: 8px;
+  font-weight: bolder;
+  border: 1px solid gainsboro;
+  outline: none;
+  transition: 0.5s;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+button {
+  padding: 6px 18px;
+  font-size: 18px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: crimson;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+.hr {
+  width: 85%;
+  margin-top: 15px;
+  position: relative;
+}
+
+.btn-box {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+.resulted {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.resulted span {
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgb(86, 10, 249);
+}
+
+@media screen and (max-width: 425px) {
+  .text-field {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

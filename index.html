@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Day Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-field">
+      <div class="day box">
+        <span>DAY</span>
+        <input type="number" name="date" id="day" placeholder="DD">
+      </div>
+      <div class="month box">
+        <span>MONTH</span>
+        <input type="number" name="date" id="month" placeholder="MM">
+      </div>
+      <div class="year box">
+        <span>YEAR</span>
+        <input type="number" name="date" id="year" placeholder="YYYY">
+      </div>
+    </div>
+    <div class="hr">
+      <hr>
+      <div class="btn-box">
+        <button onclick="convert()">Convert</button>
+      </div>
+    </div>
+
+    <div class="resulted">
+      <div class="boxes">
+        <h3><span id="cal-years">--</span>years</h3>
+      </div>
+      <div class="boxes">
+        <h3><span id="cal-months">--</span>months</h3>
+      </div>
+      <div class="boxes">
+        <h3><span id="cal-days">--</span>days</h3>
+      </div>
+      <div class="boxes">
+        <h3><span id="cal-hours">--</span>hours</h3>
+      </div>
+      <div class="boxes">
+        <h3><span id="cal-mins">--</span>minutes</h3>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="dayCal.js"></script>
+
+</html>
